@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Sorting Algorithms</title>
+		<style>
+			.div {
+				background-color: #eee;
+				width: auto;
+				grid-row: 1;
+				align-self: end;
+			}
+			
+			body {
+				background-color: #2f2f2f;
+				color: white;
+				
+			}
+			#grid {
+				position: absolute;
+				top: 130px;
+				left: 50%;
+				transform: translateX(-50%);
+				display: grid;
+				width: 98%;
+				
+				grid-column-gap: 2px;
+				grid-template-rows: 400px;
+			}
+			button { width:180px; height: 30px; }
+			input  { width:99%; height: 19px; }
+			select { width:180px; height: 30px; }
+			#sped  { float:right; }
+			a { color: white;}
+			pre {position: absolute;top: 96%;
+				right: 2%;}
+		</style>
+    </head>
+    <body>
+	<pre><a href="https://github.com/su-greg/Sorting-Visualiser">Sorting-Visualiser by su-greg</a></pre>
+	<div style="position: absolute;width: 360px;left: 50%;transform: translateX(-50%);">
+		
+		<div style="float: left;width:180px;">
+			<select id="select">
+				<option value="1">Bubble</option>
+				<option value="2">Insertion</option>
+			</select>
+			<p id="amm">Amount: 40/180</p>
+			<input id="quantity" type="range" min="20" max="180" value="40" />
+		</div>
+
+		<div style="float: right;width:180px;">
+			<button onclick="sort()" id="button">run</button>
+			<p id="sped">Speed: 99%</p>
+			<input id="slider" type="range" min="0" max="299" value="298" />
+		</div>
+		
+	</div>
+		<div id="grid"></div>
+	
+	
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
