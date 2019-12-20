@@ -3,3 +3,5 @@ A completely client-sided visualiser for an assortment of common sorting algorit
 * Bubble sort
 * Insertion sort
 
+# Goal
+To create a easy to use visualiser for sorting algorithms that runs completely on the client-side and on all devices.
